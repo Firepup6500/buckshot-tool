@@ -1,4 +1,5 @@
 import sys
+
 sys.path.append("/dev-py-packages")
 from firepup650 import inputCast, clear
 
@@ -14,15 +15,17 @@ while 1:
     round = 1
     known = {}
     for i in range(total):
-        known[str(i+1)] = ""
+        known[str(i + 1)] = ""
     while total:
         clear()
         if known[str(round)]:
             print(f"Known Shell! Shell is {known[str(round)]}")
-        print(f"""Chance of live shell:	{(live/(live+blank if live+blank>0 else 1))*100}%
+        print(
+            f"""Chance of live shell:	{(live/(live+blank if live+blank>0 else 1))*100}%
 Chance of blank shell:	{blank/(live+blank if live+blank>0 else 1)*100}%
 Shells left:		{total} ({blank}B {live}L)
-Next shell is?""")
+Next shell is?"""
+        )
         next = inputCast("> ").upper()
         if next in ["B", "L"]:
             blank = blank - 1 if next == "B" and not known[str(round)] else blank
