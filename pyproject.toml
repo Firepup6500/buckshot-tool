@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "buckshot"
+version = "0.0.1"
+description = "A helper tool for buckshot roulette"
+authors = ["Firepup Sixfifty <firepyp650@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+firepup650 = "^1.0.35"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
