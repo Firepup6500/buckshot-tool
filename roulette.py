@@ -9,7 +9,7 @@ while 1:
     print("Please enter the shells for this round.")
     print("How many live shells?")
     live = inputCast("> ", int)
-    print("How many blank shells??")
+    print("How many blank shells?")
     blank = inputCast("> ", int)
     total = blank + live
     round = 1
