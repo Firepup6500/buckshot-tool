@@ -1,6 +1,3 @@
-import sys
-
-sys.path.append("/dev-py-packages")
 from firepup650 import inputCast, clear
 
 clear()
